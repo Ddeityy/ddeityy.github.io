@@ -1,6 +1,4 @@
-html {
-    background-color:white;
-}
+html {background-color:white;}
 
 body {
     font-family: Georgia;
@@ -9,6 +7,7 @@ body {
 }
 
 .page {
+    display: grid;
     padding: 2em 6em;
     width: 40%;
     margin: 80px auto 20px;
@@ -19,9 +18,17 @@ body {
 
 .hd {
     margin-top: 2.5em;
-    padding-bottom: 1.5em;
+    padding-bottom: .5em;
     text-align: center;
 }
+
+.fluff {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+.bd {border-bottom: 1px solid #ccc;}s
 
 .ft {
     padding: 1em 0 5em 0;
@@ -41,9 +48,6 @@ p {
     padding-right: 3em;
     font-size: 70%;
 }
-.bd {
-    border-bottom: 1px solid #ccc
-}
 
 a {
     color: #990003;
@@ -51,9 +55,7 @@ a {
     font-size: 70%;
 }
 
-a:hover {
-    text-decoration: none;
-}
+a:hover {text-decoration: none;}
 
 h1 {
     font-size: 150%;
@@ -61,21 +63,15 @@ h1 {
     text-align: center;
 }
 
-h3, h4 {
-    font-size: 125%;
-}
+h3, h4 {font-size: 125%;}
 
 h2 {
     text-transform: uppercase;
     font-size: 125%;
 }
 
+h1, h2, h3, h4 {color: #333;}
 
-h1, h2, h3, h4 {
-    color: #333;
-}
-
-/* skills */
 .container {
     width: 100%;
     background-color: #ddd;
@@ -83,8 +79,7 @@ h1, h2, h3, h4 {
 
 .skills {
     text-align: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 5px;
     color: white;
 }
 
@@ -102,22 +97,8 @@ h1, h2, h3, h4 {
 
 
 @media (min-width: 768px) {
-    
-    .fluff {
-        text-align: center;
-        display: block;
-        border-bottom: 1px solid #ccc
-    }
 
-    .page {
-        display: grid;
-        padding: 2em 6em;
-        width: 60%;
-        margin: 80px auto 20px;
-        border: solid #666;
-        border-width: 8px 0 2px 0;
-        background-color: #f5f5f5;
-    }
+    .page {width: 60%;}
 
     .hd h1 {
         font-size: 3.2em;
@@ -125,18 +106,10 @@ h1, h2, h3, h4 {
         letter-spacing: 3px;
     }
 
-    .hd {
-        display: flex;
-        margin-top: 2.5em;
-        padding-bottom: 1.5em;
-    }
+    .hd {margin-top: 2.5em;}
 
-    .hd > * {
-        margin: 10px auto;
-    }
+    .hd > * {margin: 10px auto;}
 
-    .bd {
-        margin-bottom: 2em;
-    }
+    .bd {margin-bottom: 2em;}
 }
 
